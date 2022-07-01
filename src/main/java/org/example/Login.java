@@ -20,7 +20,6 @@ public class Login {
 
     public static void main(String[] args) {
         loginTest();
-
     }
 
     public static void loginTest() {
