@@ -17,7 +17,6 @@ public class Login {
     private static final By passwordFieldLocator = By.xpath("//*[@id='passwd']");
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
 
-
     public static void main(String[] args) {
         loginTest();
     }
