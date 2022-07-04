@@ -15,7 +15,6 @@ import java.time.Duration;
 public class Search {
 
     private static final String baseURl = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
-    private static final String searchURL = "http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=dress&submit_search=";
     private static final By emailAddressFieldLocator = By.xpath("//*[@id='email']");
     private static final By passwordFieldLocator = By.xpath("//*[@id='passwd']");
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
