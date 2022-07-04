@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComTests (part 3)">
+    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComTests (part 4, final edits)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,7 +47,12 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Search">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.org.example.Search">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Login" />
       <module name="untitled1" />
@@ -81,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Search" />
-        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.org.example.Search" />
+        <item itemvalue="Application.org.example.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656688082736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="EComTests (part 4, final edits)">
+      <created>1656688863865</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656688863865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +154,7 @@
     <MESSAGE value="EComTests (part 1)" />
     <MESSAGE value="EComTests (part 2)" />
     <MESSAGE value="EComTests (part 3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="EComTests (part 3)" />
+    <MESSAGE value="EComTests (part 4, final edits)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EComTests (part 4, final edits)" />
   </component>
 </project>

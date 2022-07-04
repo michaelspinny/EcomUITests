@@ -20,6 +20,9 @@ public class Search {
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
     private static final By searchBarLocator = By.xpath("//*[@id='search_query_top']");
     private static final By searchBarSubmit = By.xpath("//*[@id='searchbox']/button");
+    private static final String userLoginEmail = "lamontae.julius@moondoo.org";
+    private static final String userLoginPassword = "Aa111111/";
+    private static final String productSearchQuery = "dress";
 
 
     public static void main(String[] args) {
@@ -36,16 +39,16 @@ public class Search {
         driver.manage().window().maximize();
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(emailAddressFieldLocator)));
-        driver.findElement(emailAddressFieldLocator).sendKeys("lamontae.julius@moondoo.org");
+        driver.findElement(emailAddressFieldLocator).sendKeys(userLoginEmail);
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(passwordFieldLocator)));
-        driver.findElement(passwordFieldLocator).sendKeys("Aa111111/");
+        driver.findElement(passwordFieldLocator).sendKeys(userLoginPassword);
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(signInButtonLocator)));
         driver.findElement(signInButtonLocator).click();
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchBarLocator)));
-        driver.findElement(searchBarLocator).sendKeys("dress");
+        driver.findElement(searchBarLocator).sendKeys(productSearchQuery);
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(searchBarSubmit)));
         driver.findElement(searchBarSubmit).click();

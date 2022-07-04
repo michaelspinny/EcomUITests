@@ -16,6 +16,8 @@ public class Login {
     private static final By emailAddressFieldLocator = By.xpath("//*[@id='email']");
     private static final By passwordFieldLocator = By.xpath("//*[@id='passwd']");
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
+    private static final String userLoginEmail = "lamontae.julius@moondoo.org";
+    private static final String userLoginPassword = "Aa111111/";
 
     public static void main(String[] args) {
         loginTest();
@@ -31,10 +33,10 @@ public class Login {
         driver.manage().window().maximize();
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(emailAddressFieldLocator)));
-        driver.findElement(emailAddressFieldLocator).sendKeys("lamontae.julius@moondoo.org");
+        driver.findElement(emailAddressFieldLocator).sendKeys(userLoginEmail);
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(passwordFieldLocator)));
-        driver.findElement(passwordFieldLocator).sendKeys("Aa111111/");
+        driver.findElement(passwordFieldLocator).sendKeys(userLoginPassword);
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(signInButtonLocator)));
         driver.findElement(signInButtonLocator).click();
