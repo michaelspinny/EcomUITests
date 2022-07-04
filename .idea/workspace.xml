@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComTestsVer2 (part 2)">
+    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComTestsVer2 (part 3)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AddProduct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +49,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Search.searchTest">
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Login" />
-      <module name="untitled1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.AddProduct.addProductToCart">
     <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Search" />
       <module name="untitled1" />
@@ -85,6 +72,41 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="com.app.test" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AddProduct" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddProduct.addProductToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AddProduct" />
+      <option name="METHOD_NAME" value="addProductToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,6 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddProduct.addProductToCart" />
+        <item itemvalue="TestNG.AddProduct" />
         <item itemvalue="TestNG.Search.searchTest" />
         <item itemvalue="TestNG.Login.loginTest" />
       </list>
@@ -176,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656959271107</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="EComTestsVer2 (part 3)">
+      <created>1656960063202</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656960063202</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +227,7 @@
     <MESSAGE value="EComTests (part 3)" />
     <MESSAGE value="EComTests (part 4, final edits)" />
     <MESSAGE value="EComTestsVer2 (part 2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="EComTestsVer2 (part 2)" />
+    <MESSAGE value="EComTestsVer2 (part 3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EComTestsVer2 (part 3)" />
   </component>
 </project>
