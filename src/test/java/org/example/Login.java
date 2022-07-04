@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -16,13 +18,12 @@ public class Login {
     private static final By emailAddressFieldLocator = By.xpath("//*[@id='email']");
     private static final By passwordFieldLocator = By.xpath("//*[@id='passwd']");
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
+    private static final By loggedInTextLocator = By.xpath("//div[@id='center_column']//p[@class='info-account']");
     private static final String userLoginEmail = "lamontae.julius@moondoo.org";
     private static final String userLoginPassword = "Aa111111/";
+    private static final String loggedInTextSample = "Welcome to your account.";
 
-    public static void main(String[] args) {
-        loginTest();
-    }
-
+    @Test
     public static void loginTest() {
 
         WebDriverManager.chromedriver().setup();
@@ -41,12 +42,11 @@ public class Login {
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(signInButtonLocator)));
         driver.findElement(signInButtonLocator).click();
 
-        String url = driver.getCurrentUrl();
-        if (url.equals(loggedInURL)) {
-            System.out.println("Test Passed");
-        } else {
-            System.out.println("Test Failed");
-        }
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(loggedInTextLocator)));
+        String loggedInTextValue = driver.findElement(loggedInTextLocator).getText();
+
+        Assert.assertTrue(loggedInTextValue.contains(loggedInTextSample));
+
         driver.quit();
     }
 }
