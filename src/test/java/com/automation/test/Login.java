@@ -1,9 +1,8 @@
-package org.example;
+package com.automation.test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,24 +11,19 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Search {
+public class Login {
 
     private static final String baseURl = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
     private static final By emailAddressFieldLocator = By.xpath("//*[@id='email']");
     private static final By passwordFieldLocator = By.xpath("//*[@id='passwd']");
     private static final By signInButtonLocator = By.xpath("//*[@id='SubmitLogin']/span");
-    private static final By searchBarLocator = By.xpath("//*[@id='search_query_top']");
-    private static final By searchBarSubmit = By.xpath("//*[@id='searchbox']/button");
-    private static final By searchSuccessTextLocator = By.xpath("//h1[@class='page-heading  product-listing']//span[@class='heading-counter']");
-
+    private static final By loggedInTextLocator = By.xpath("//div[@id='center_column']//p[@class='info-account']");
     private static final String userLoginEmail = "lamontae.julius@moondoo.org";
     private static final String userLoginPassword = "Aa111111/";
-    private static final String productSearchQuery = "dress";
-    private static final String searchSuccessTextSample = "results have been found";
-
+    private static final String loggedInTextSample = "Welcome to your account.";
 
     @Test
-    public static void searchTest() {
+    public static void loginTest() {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -47,19 +41,11 @@ public class Search {
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(signInButtonLocator)));
         driver.findElement(signInButtonLocator).click();
 
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchBarLocator)));
-        driver.findElement(searchBarLocator).sendKeys(productSearchQuery);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(loggedInTextLocator)));
+        String loggedInTextValue = driver.findElement(loggedInTextLocator).getText();
 
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(searchBarSubmit)));
-        driver.findElement(searchBarSubmit).click();
-
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchSuccessTextLocator)));
-        String searchSuccessTextValue = driver.findElement(searchSuccessTextLocator).getText();
-
-        Assert.assertTrue(searchSuccessTextValue.contains(searchSuccessTextSample));
+        Assert.assertTrue(loggedInTextValue.contains(loggedInTextSample));
 
         driver.quit();
-
     }
-
 }
