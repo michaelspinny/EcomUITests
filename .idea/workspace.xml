@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComTestsVer2 (part 5, final)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/MyAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/PersonalInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/SearchResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/LoginSuccessTest.java" afterDir="false" />
+    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComUITests Page Object (ver 1)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AccountUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/AccountUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/AddProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656966916004</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="EComUITests Page Object (ver 1)">
+      <created>1657058052189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657058052189</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +256,7 @@
     <MESSAGE value="EComTestsVer2 (part 3)" />
     <MESSAGE value="EComTestsVer2 (part 4)" />
     <MESSAGE value="EComTestsVer2 (part 5, final)" />
-    <option name="LAST_COMMIT_MESSAGE" value="EComTestsVer2 (part 5, final)" />
+    <MESSAGE value="EComUITests Page Object (ver 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EComUITests Page Object (ver 1)" />
   </component>
 </project>
