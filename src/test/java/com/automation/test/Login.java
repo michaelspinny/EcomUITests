@@ -22,6 +22,5 @@ public class Login {
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-
     }
 }
