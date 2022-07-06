@@ -13,12 +13,11 @@ public class SearchResults {
     private static final By searchBarSubmit = By.xpath("//*[@id='searchbox']/button");
     private static final By searchSuccessTextLocator = By.xpath("//h1[@class='page-heading  product-listing']//span[@class='heading-counter']");
     private static final String productSearchQuery = "dress";
-    private static final String searchSuccessTextSample = "results have been found";
 
     WebDriver driver;
     WebDriverWait wait;
     Actions action;
-    public void performProductSearchFlow() {
+    public void performProductSearch() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchBarLocator)));
         driver.findElement(searchBarLocator).sendKeys(productSearchQuery);
@@ -26,11 +25,11 @@ public class SearchResults {
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(searchBarSubmit)));
         driver.findElement(searchBarSubmit).click();
 
+    }
+
+    public String getSearchResultsTextValue() {
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchSuccessTextLocator)));
         String searchSuccessTextValue = driver.findElement(searchSuccessTextLocator).getText();
-
-        Assert.assertTrue(searchSuccessTextValue.contains(searchSuccessTextSample));
-
-        driver.quit();
+        return searchSuccessTextValue;
     }
 }

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComUITests Page Object (ver 4)">
+    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComUITests Page Object (ver 5)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/MyAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/PersonalInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/PersonalInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AccountUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AccountUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/LoginSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/LoginSuccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ProductDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/SearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/SearchResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AddProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/ProductSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/ProductSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,23 +67,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountUpdate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="untitled1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AccountUpdate" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AccountUpdateTest.accountUpdateTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled1" />
       <extension name="coverage">
@@ -101,34 +85,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddProductTest.addProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.automation.test.uitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddProduct" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddProduct.addProductToCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="untitled1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddProduct" />
-      <option name="METHOD_NAME" value="addProductToCart" />
+      <option name="PACKAGE_NAME" value="com.automation.test.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.test.uitests.AddProductTest" />
+      <option name="METHOD_NAME" value="addProductTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,13 +121,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginSuccessTest.loginSuccessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.test.uitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.test.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.test.uitests.LoginSuccessTest" />
+      <option name="METHOD_NAME" value="loginSuccessTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductSearchTest.productSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.test.uitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.test.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.test.uitests.ProductSearchTest" />
+      <option name="METHOD_NAME" value="productSearchTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AccountUpdateTest.accountUpdateTest" />
+        <item itemvalue="TestNG.LoginSuccessTest.loginSuccessTest" />
+        <item itemvalue="TestNG.ProductSearchTest.productSearchTest" />
+        <item itemvalue="TestNG.AddProductTest.addProductTest" />
         <item itemvalue="TestNG.LoginSuccessTest.loginSuccessFlowTest" />
-        <item itemvalue="TestNG.AddProduct" />
-        <item itemvalue="TestNG.AccountUpdate" />
-        <item itemvalue="TestNG.AddProduct.addProductToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657117018336</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="EComUITests Page Object (ver 5)">
+      <created>1657144225011</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657144225011</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +294,7 @@
     <MESSAGE value="EComUITests Page Object (ver 2)" />
     <MESSAGE value="EComUITests Page Object (ver 3)" />
     <MESSAGE value="EComUITests Page Object (ver 4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="EComUITests Page Object (ver 4)" />
+    <MESSAGE value="EComUITests Page Object (ver 5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EComUITests Page Object (ver 5)" />
   </component>
 </project>

@@ -14,12 +14,11 @@ public class ProductDetailsPage {
     private static final By addToCartButtonLocator = By.xpath("//div[@class='button-container']//a[@title='Add to cart']");
     private static final By itemAddedPopUpCloseButtonLocator = By.xpath("//span[@title='Close window']");
     private static final By shoppingCartIconLocator = By.xpath("//div[@class='shopping_cart']//a[@title='View my shopping cart']");
-    private static final String shoppingCartTextSample = "Your shopping cart contains";
 
     WebDriver driver;
     WebDriverWait wait;
     Actions action;
-    public void addProductToCartFlow() {
+    public void addProductToCart() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(womenCategoryLocator)));
         Actions hoverOverCategory = new Actions(driver);
