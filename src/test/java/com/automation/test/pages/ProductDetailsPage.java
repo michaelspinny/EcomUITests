@@ -1,8 +1,10 @@
 package com.automation.test.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductDetailsPage {
 
@@ -14,7 +16,10 @@ public class ProductDetailsPage {
     private static final By shoppingCartIconLocator = By.xpath("//div[@class='shopping_cart']//a[@title='View my shopping cart']");
     private static final String shoppingCartTextSample = "Your shopping cart contains";
 
-    public static void addProductToCartFlow() {
+    WebDriver driver;
+    WebDriverWait wait;
+    Actions action;
+    public void addProductToCartFlow() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(womenCategoryLocator)));
         Actions hoverOverCategory = new Actions(driver);

@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComUITests Page Object (ver 2)">
+    <list default="true" id="7aed4f07-7ab0-40b4-bbe6-3b9e541d7cad" name="Changes" comment="EComUITests Page Object (ver 3)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/AccountUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/AccountUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/AddProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/MyAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/PersonalInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/PersonalInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ProductDetailsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/SearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/SearchResults.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/pages/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/AddProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/LoginSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/test/uitests/LoginSuccessTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddProduct">
+  <component name="RunManager" selected="TestNG.LoginSuccessTest.loginSuccessFlowTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="com.app.test" />
       <method v="2">
@@ -140,17 +140,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search.searchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginSuccessTest.loginSuccessFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.automation.test.uitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Search" />
-      <option name="METHOD_NAME" value="searchTest" />
+      <option name="PACKAGE_NAME" value="com.automation.test.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.test.uitests.LoginSuccessTest" />
+      <option name="METHOD_NAME" value="loginSuccessFlowTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginSuccessTest.loginSuccessFlowTest" />
         <item itemvalue="TestNG.AddProduct" />
         <item itemvalue="TestNG.AccountUpdate" />
         <item itemvalue="TestNG.AddProduct.addProductToCart" />
         <item itemvalue="TestNG.Login" />
-        <item itemvalue="TestNG.Search.searchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657059192874</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="EComUITests Page Object (ver 3)">
+      <created>1657060808371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657060808371</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +279,7 @@
     <MESSAGE value="EComTestsVer2 (part 5, final)" />
     <MESSAGE value="EComUITests Page Object (ver 1)" />
     <MESSAGE value="EComUITests Page Object (ver 2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="EComUITests Page Object (ver 2)" />
+    <MESSAGE value="EComUITests Page Object (ver 3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EComUITests Page Object (ver 3)" />
   </component>
 </project>

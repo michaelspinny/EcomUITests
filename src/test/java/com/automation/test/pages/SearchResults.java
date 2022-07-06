@@ -1,7 +1,10 @@
 package com.automation.test.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class SearchResults {
@@ -12,7 +15,10 @@ public class SearchResults {
     private static final String productSearchQuery = "dress";
     private static final String searchSuccessTextSample = "results have been found";
 
-    public static void performProductSearchFlow() {
+    WebDriver driver;
+    WebDriverWait wait;
+    Actions action;
+    public void performProductSearchFlow() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchBarLocator)));
         driver.findElement(searchBarLocator).sendKeys(productSearchQuery);

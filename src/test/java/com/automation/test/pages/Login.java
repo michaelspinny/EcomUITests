@@ -16,19 +16,18 @@ public class Login {
     private static final By loggedInTextLocator = By.xpath("//div[@id='center_column']//p[@class='info-account']");
     private static final String userLoginEmail = "lamontae.julius@moondoo.org";
     private static final String userLoginPassword = "Aa111111/";
-    private static final String loggedInTextSample = "Welcome to your account.";
+
 
     WebDriver driver;
     WebDriverWait wait;
     Actions action;
 
-    public Login(WebDriver driver, WebDriverWait wait, Actions action) {
+    public Login(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
-        this.action = action;
     }
 
-    public static void loginSuccessFlow() {
+    public void performLogin() {
         driver.get(baseURl);
         driver.manage().window().maximize();
 
@@ -42,10 +41,11 @@ public class Login {
         driver.findElement(signInButtonLocator).click();
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(loggedInTextLocator)));
+
+    }
+
+    public String getLoggedInText() {
         String loggedInTextValue = driver.findElement(loggedInTextLocator).getText();
-
-        Assert.assertTrue(loggedInTextValue.contains(loggedInTextSample));
-
-        driver.quit();
+        return loggedInTextValue;
     }
 }
