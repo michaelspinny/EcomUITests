@@ -23,7 +23,7 @@ public class ProductSearchTest {
 
         Login login = new Login(driver, wait);
         login.performLogin();
-        SearchResults results = new SearchResults();
+        SearchResults results = new SearchResults(driver, wait);
         results.performProductSearch();
         Assert.assertTrue(results.getSearchResultsTextValue().contains(searchSuccessTextSample));
         driver.quit();

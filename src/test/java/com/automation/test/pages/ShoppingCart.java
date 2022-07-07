@@ -12,6 +12,10 @@ public class ShoppingCart {
     private final By shoppingCartTextLocator = By.xpath("//span[@class='heading-counter']");
     WebDriver driver;
     Wait wait;
+    public ShoppingCart(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = wait;
+    }
 
     public String getShoppingCartText() {
 

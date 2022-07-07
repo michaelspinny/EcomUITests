@@ -16,7 +16,13 @@ public class SearchResults {
 
     WebDriver driver;
     WebDriverWait wait;
-    Actions action;
+
+    public SearchResults(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = wait;
+    }
+
+
     public void performProductSearch() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchBarLocator)));

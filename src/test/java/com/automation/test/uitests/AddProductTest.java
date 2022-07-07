@@ -23,9 +23,9 @@ public class AddProductTest {
 
         Login login = new Login(driver, wait);
         login.performLogin();
-        ProductDetailsPage addProduct = new ProductDetailsPage();
+        ProductDetailsPage addProduct = new ProductDetailsPage(driver, wait);
         addProduct.addProductToCart();
-        ShoppingCart cart = new ShoppingCart();
+        ShoppingCart cart = new ShoppingCart(driver, wait);
         cart.getShoppingCartText();
         Assert.assertTrue(cart.getShoppingCartText().contains(shoppingCartTextSample));
         driver.quit();

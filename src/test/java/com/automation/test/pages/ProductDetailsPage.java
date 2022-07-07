@@ -18,6 +18,11 @@ public class ProductDetailsPage {
     WebDriver driver;
     WebDriverWait wait;
     Actions action;
+
+    public ProductDetailsPage(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = wait;
+    }
     public void addProductToCart() {
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(womenCategoryLocator)));
